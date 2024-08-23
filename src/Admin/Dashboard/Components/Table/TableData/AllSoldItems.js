@@ -1,0 +1,42 @@
+export const AllSoldItems = [
+  {
+    id: 1123,
+    product: "Leather Bag",
+    date: "Jun 29,2022",
+    customerName: "Afaq Karim",
+    status: "Delivered",
+    amount: "$400.00",
+  },
+  {
+    id: 1124,
+    product: "Leather Shoes",
+    date: "Jun 30,2022",
+    customerName: "John Smith",
+    status: "Pending",
+    amount: "$288.00",
+  },
+  {
+    id: 1125,
+    product: "Leather Watch",
+    date: "Jun 18,2022",
+    customerName: "Afaq Karim",
+    status: "Canceled",
+    amount: "$500.00",
+  },
+  {
+    id: 1126,
+    product: "Leather Notebook",
+    date: "Jun 17,2022",
+    customerName: "Afaq Karim",
+    status: "Delivered",
+    amount: "$100.00",
+  },
+  {
+    id: 1127,
+    product: "Leather Pen Case",
+    date: "Jun 12,2022",
+    customerName: "Afaq Karim",
+    status: "Delivered",
+    amount: "$60.00",
+  },
+];

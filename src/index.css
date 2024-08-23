@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.Nu {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.Mont {
+  font-family: "Montserrat", sans-serif;
+}
+
+.As {
+  font-family: "Assistant", sans-serif;
+}
+
+/* hover underline animation */
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #333;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.hover-underline-animation-white::after {
+  background-color: black;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 40px 60px;
+}
+
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 130%;
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+/* button styles */
+.button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 0px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: black;
+  transition: all 500ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid black;
+}
+
+.button:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  outline: 2px solid black;
+  box-shadow: 4px 5px 17px -4px black;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: black;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.button:hover::before {
+  width: 250%;
+}
+
+/* wishlist button */
+
+.wishlistButton {
+  padding: 7px 20px;
+  border: none;
+  border-radius: 0px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: black;
+  transition: all 500ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid black;
+  width: 100%;
+}
+
+.wishlistButton:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  outline: 2px solid black;
+  box-shadow: 4px 5px 17px -4px black;
+}
+
+.wishlistButton::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: black;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.wishlistButton:hover::before {
+  width: 250%;
+}
+
+.paginationBttns {
+  width: 80%;
+  height: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-family: "Poppins";
+  margin-top: 50px;
+  font-size: 14px;
+}
+
+.paginationBttns a {
+  background-color: transparent;
+  color: black;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid black;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.paginationBttns a:hover {
+  background-color: black;
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.paginationActive a {
+  background-color: black;
+  color: #fff;
+}
+
+.active {
+  font-weight: 700;
+}
+
+.myaccount .active {
+  border-bottom: 1px solid white;
+}
+
+.myAc::-webkit-scrollbar {
+  display: none;
+}
+
+.order-card-desc {
+  width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.mobileLink.active {
+  border-bottom: 1px solid white;
+}
+
+.admin-sidebar .active {
+  background: #333;
+  color: white;
+}
+
+.admin-sidebar .active:hover {
+  background: #111;
+  color: white;
+}

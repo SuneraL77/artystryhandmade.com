@@ -1,0 +1,27 @@
+.cat .swiper {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.cat .swiper-slide {
+  text-align: center;
+  font-size: 15px;
+  background: #fff;
+  color: black;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cat .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.cat .swiper-pagination-bullet-active {
+  background-color: black;
+}
